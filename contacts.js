@@ -9,7 +9,7 @@ async function readContacts() {
   return JSON.parse(data);
 }
 
-async function writeContacts() {
+async function writeContacts(contacts) {
   await fs.writeFile(contactsPath, JSON.stringify(contacts, undefined, 2));
 }
 
